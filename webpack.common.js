@@ -7,7 +7,6 @@ const dist = path.resolve(__dirname, './dist');
 module.exports = {
   entry: {
     app: [
-      '@webcomponents/webcomponentsjs/webcomponents-bundle',
       '@polymer/lit-element',
       `${src}/app/component.js`
     ]

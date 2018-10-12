@@ -1,5 +1,5 @@
 {
-  "name": "webcomponents-pokemon-cards",
+  "name": "web-component-pokemon-cards",
   "version": "1.0.0",
   "author": {
     "name": "Gabriel Mayta",
@@ -30,6 +30,7 @@
     "html-webpack-plugin": "^3.2.0",
     "path": "^0.12.7",
     "prettier": "^1.13.7",
+    "siema": "^1.5.1",
     "webpack": "^4.17.2",
     "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.7",
