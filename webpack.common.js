@@ -6,10 +6,7 @@ const dist = path.resolve(__dirname, './dist');
 
 module.exports = {
   entry: {
-    app: [
-      '@polymer/lit-element',
-      `${src}/app/component.js`
-    ]
+    app: `${src}/app/component.js`
   },
   module: {
     rules: [
@@ -17,12 +14,27 @@ module.exports = {
         test: /\.js$/,
         loader: 'babel-loader',
         exclude: /node_modules/
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          {
+            loader: 'style-loader'
+          },
+          {
+            loader: 'css-loader'
+          },
+          {
+            loader: 'sass-loader'
+          }
+        ],
+        exclude: /node_modules/
       }
     ]
   },
   plugins: [new CleanWebpackPlugin([dist])],
   resolve: {
-    extensions: ['.js'],
+    extensions: ['.js', '.scss'],
     modules: ['node_modules', 'src'],
     alias: {
       app: `${src}/app`,
