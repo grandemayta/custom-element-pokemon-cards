@@ -1,6 +1,7 @@
 {
   "name": "web-component-pokemon-cards",
   "version": "1.0.0",
+  "main": "dist/app.min.js",
   "author": {
     "name": "Gabriel Mayta",
     "email": "grandemayta@gmail.com"
