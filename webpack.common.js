@@ -6,7 +6,10 @@ const dist = path.resolve(__dirname, './dist');
 
 module.exports = {
   entry: {
-    app: `${src}/app/component.js`
+    app: [
+      '@webcomponents/webcomponentsjs/webcomponents-bundle.js',
+      `${src}/app/component.js`
+    ]
   },
   module: {
     rules: [
