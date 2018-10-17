@@ -43,6 +43,8 @@ I added a demo of this project on CodePen:
 
 Show [demo](https://codepen.io/grandemayta/pen/WaMYwe?editors=1010)
 
+<img src="https://user-images.githubusercontent.com/6887120/47101923-abadd600-d23b-11e8-8a51-82c4feeb76df.png">
+
 ## Todo
 
 - [ ] Setup Unit Testing
