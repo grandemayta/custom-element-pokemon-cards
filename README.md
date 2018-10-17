@@ -38,6 +38,11 @@ $ npm run prod
 - [x] Edge
 - [x] IE11
 
+## Demo
+I added a demo of this project on CodePen:
+
+Show [demo](https://codepen.io/grandemayta/pen/WaMYwe?editors=1010)
+
 ## Todo
 
 - [ ] Setup Unit Testing
