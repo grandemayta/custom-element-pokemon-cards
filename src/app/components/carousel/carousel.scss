@@ -1,0 +1,72 @@
+.gm-cards--carousel {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    background: #f0f0f0;
+    user-select: none;
+
+    .gm-cards--title {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 22px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .frame {
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+        font-size: 0;
+        line-height: 0;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .slides {
+        display: block;
+    }
+
+    li {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        width: auto;
+
+        img {
+            width: 120px;
+        }
+    }
+
+    .next, .prev {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 50%;
+        margin-top: -12px;
+        z-index: 100;
+        width: 24px;
+        height: 24px;
+        font-size: 8px;
+        text-transform: uppercase;
+        border-radius: 50%;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: none;
+
+        svg {
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+    .next {
+        right: 10px;
+    }
+
+    .prev {
+        left: 10px;
+    }
+}
