@@ -6,6 +6,15 @@
     background: #f0f0f0;
     user-select: none;
 
+    .siema {
+        width: 85%;
+        margin: 0 auto;
+
+        div {
+            text-align: center;
+        }
+    }
+
     .gm-cards--title {
         width: 100%;
         padding: 10px 0;
@@ -14,29 +23,8 @@
         text-transform: uppercase;
     }
 
-    .frame {
-        position: relative;
-        width: 80%;
-        margin: 0 auto;
-        font-size: 0;
-        line-height: 0;
-        overflow: hidden;
-        white-space: nowrap;
-    }
-
-    .slides {
-        display: block;
-    }
-
-    li {
-        position: relative;
-        display: inline-block;
-        text-align: center;
-        width: auto;
-
-        img {
-            width: 120px;
-        }
+    img {
+        width: 120px;
     }
 
     .next, .prev {

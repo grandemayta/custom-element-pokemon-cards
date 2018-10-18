@@ -11,6 +11,7 @@ export default class PokemonCards extends HTMLElement {
     super();
     this.baseUrl = 'https://api.pokemontcg.io/v1/';
     this.endpoint = 'cards?name=';
+    this.carousel = null;
     this.spinner = null;
     this.load();
   }
@@ -42,10 +43,13 @@ export default class PokemonCards extends HTMLElement {
     }
     this.getCards(name, cards => {
       render(this.template(cards), this);
-      new Carousel(this, '#carousel', name, cards).load();
+      if (this.carousel === null) {
+        this.carousel = new Carousel(this, '#carousel', name, cards);
+      }
       if (this.spinner === null) {
         this.spinner = new Spinner(this, '#spinner');
       }
+      this.carousel.load();
       this.spinner.load(false);
     });
   }
