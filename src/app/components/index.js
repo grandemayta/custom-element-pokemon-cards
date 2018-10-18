@@ -1,4 +1,4 @@
-import Carousel from 'components/carousel/carousel';
-import Spinner from 'components/spinner/spinner';
+import Carousel from './carousel/carousel';
+import Spinner from './spinner/spinner';
 
 export { Carousel, Spinner };
