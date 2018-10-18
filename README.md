@@ -20,7 +20,7 @@ $ npm run prod
 
 ### Libraries
 
-- [WebComponents](https://github.com/webcomponents/webcomponentsjs)
+- [@webcomponents/custom-elements](https://github.com/webcomponents/custom-elements)
 - [Polyfill](https://babeljs.io/docs/en/babel-polyfill.html)
 - [Lit-html](https://polymer.github.io/lit-html/)
 
