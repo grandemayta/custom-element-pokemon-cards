@@ -1,10 +1,8 @@
 import { render, html } from 'lit-html';
-import Swiper from 'swiper/src/components/core/core-class';
-import resize from 'swiper/src/modules/resize/resize';
-import navigation from 'swiper/src/components/navigation/navigation';
+import { Swiper, Navigation } from 'swiper/dist/js/swiper.esm';
 import './carousel.scss';
 
-Swiper.use([resize, navigation]);
+Swiper.use([Navigation]);
 
 export default class Carousel {
   constructor(rootEl, selector, name, cards) {

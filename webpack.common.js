@@ -6,14 +6,18 @@ const dist = path.resolve(__dirname, './dist');
 
 module.exports = {
   entry: {
-    app: ['whatwg-fetch', '@webcomponents/custom-elements', `${src}/app/component.js`]
+    app: [
+      'whatwg-fetch',
+      'promise-polyfill/dist/polyfill',
+      '@webcomponents/custom-elements',
+      `${src}/app/component.js`
+    ]
   },
   module: {
     rules: [
       {
         test: /\.js$/,
-        loader: 'babel-loader',
-        exclude: /node_modules/
+        loader: 'babel-loader'
       },
       {
         test: /\.scss$/,
