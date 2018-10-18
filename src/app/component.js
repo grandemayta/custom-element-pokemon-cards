@@ -9,6 +9,7 @@ export default class PokemonCards extends HTMLElement {
 
   constructor() {
     super();
+    this.rootEl = this;
     this.baseUrl = 'https://api.pokemontcg.io/v1/';
     this.endpoint = 'cards?name=';
     this.spinner = null;
@@ -36,12 +37,12 @@ export default class PokemonCards extends HTMLElement {
   }
 
   load() {
-    let name = this.getAttribute('name');
+    let name = this.rootEl.getAttribute('name');
     if (this.spinner !== null) this.spinner.load(true);
     this.getCards(name, cards => {
-      render(this.template(cards), this);
-      if (this.spinner === null) this.spinner = new Spinner(this, '#spinner');
-      new Carousel(this, '#carousel', name, cards).load();
+      render(this.template(cards), this.rootEl);
+      if (this.spinner === null) this.spinner = new Spinner(this.rootEl, '#spinner');
+      new Carousel(this.rootEl, '#carousel', name, cards).load();
       this.spinner.load(false);
     });
   }

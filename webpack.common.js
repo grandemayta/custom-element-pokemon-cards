@@ -6,11 +6,7 @@ const dist = path.resolve(__dirname, './dist');
 
 module.exports = {
   entry: {
-    app: [
-      'whatwg-fetch',
-      '@webcomponents/webcomponentsjs/webcomponents-bundle.js',
-      `${src}/app/component.js`
-    ]
+    app: ['whatwg-fetch', '@webcomponents/custom-elements', `${src}/app/component.js`]
   },
   module: {
     rules: [
